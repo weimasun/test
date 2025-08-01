@@ -7,4 +7,4 @@ name = st.text_input("你的名字")
 if name:
     st.write(f"你好, {name}!")
 
----
+'---'
