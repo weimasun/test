@@ -44,9 +44,9 @@ show_pages(
 
 hide_pages(["Thank you"])
 
-st.markdown("### 👨‍🔧 Data Engineering Zoomcamp by [DataTalksClub](https://datatalks.club/)")
-
-st.image("https://pbs.twimg.com/media/FmmYA2YWYAApPRB.png")
+st.title("👨‍🔧 Data Engineering Zoomcamp")
+st.markdown("by [DataTalksClub](https://datatalks.club/)")
+st.image("https://pbs.twimg.com/media/FmmYA2YWYAApPRB.png", use_column_width=True)
 
 st.info("Original Course Repository on [Github](https://github.com/DataTalksClub/data-engineering-zoomcamp)")
 
@@ -67,56 +67,69 @@ with st.expander("Sign up here for 2024 Cohort"):
         
     #""", unsafe_allow_html=True)
 
-st.markdown("""
-### 👨‍🎓 Taking the course
+st.markdown("### 👨‍🎓 Taking the course")
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown("""
+    ##### 👨‍👦‍👦 2024 Cohort
 
-##### 👨‍👦‍👦 2024 Cohort
+    * **Start**: 15 January 2024 (Monday) at 17:00 CET
+    * **Registration link**: https://airtable.com/shr6oVXeQvSI5HuWD
+    * [Cohort folder](cohorts/2024/) with homeworks and deadlines
+    """)
 
-* **Start**: 15 January 2024 (Monday) at 17:00 CET
-* **Registration link**: https://airtable.com/shr6oVXeQvSI5HuWD
-* [Cohort folder](cohorts/2024/) with homeworks and deadlines 
+with col2:
+    st.markdown("""
+    ##### 👨‍🔧 Self-paced mode
 
+    All the materials of the course are freely available, so that you
+    can take the course at your own pace
 
-##### 👨‍🔧 Self-paced mode
+    * Follow the suggested syllabus (see below) week by week
+    * You don't need to fill in the registration form. Just start watching the videos and join Slack
+    * Check [FAQ](https://docs.google.com/document/d/19bnYs80DwuUimHM65UV3sylsCn2j1vziPOwzBwQrebw/edit?usp=sharing) if you have problems
+    * If you can't find a solution to your problem in FAQ, ask for help in Slack
+    """)
 
-All the materials of the course are freely available, so that you
-can take the course at your own pace
+st.markdown("### 🔎 Overview & Prerequisites")
+col1, col2 = st.columns(2)
 
-* Follow the suggested syllabus (see below) week by week
-* You don't need to fill in the registration form. Just start watching the videos and join Slack
-* Check [FAQ](https://docs.google.com/document/d/19bnYs80DwuUimHM65UV3sylsCn2j1vziPOwzBwQrebw/edit?usp=sharing) if you have problems
-* If you can't find a solution to your problem in FAQ, ask for help in Slack
+with col1:
+    st.image("https://raw.githubusercontent.com/DataTalksClub/data-engineering-zoomcamp/main/images/architecture/photo1700757552.jpeg")
 
-### 🔎 Overview""", unsafe_allow_html=True)
+with col2:
+    st.markdown("""
+    To get the most out of this course, you should feel comfortable with coding and command line
+    and know the basics of SQL. Prior experience with Python will be helpful, but you can pick
+    Python relatively fast if you have experience with other programming languages.
 
+    Prior experience with data engineering is not required.
+    """)
 
-st.image("https://raw.githubusercontent.com/DataTalksClub/data-engineering-zoomcamp/main/images/architecture/photo1700757552.jpeg")
+st.markdown("### 👨‍🏫 Instructors")
 
+# Current Instructors
+st.markdown("##### Current Instructors")
+col1, col2, col3 = st.columns(3)
+with col1:
+    st.markdown("[Ankush Khanna](https://linkedin.com/in/ankushkhanna2)")
+    st.markdown("[Victoria Perez Mola](https://www.linkedin.com/in/victoriaperezmola/)")
+with col2:
+    st.markdown("[Alexey Grigorev](https://linkedin.com/in/agrigorev)")
+    st.markdown("[Matt Palmer](https://www.linkedin.com/in/matt-palmer/)")
+with col3:
+    st.markdown("[Luis Oliveira](https://www.linkedin.com/in/lgsoliveira/)")
+    st.markdown("[Michael Shoemaker](https://www.linkedin.com/in/michaelshoemaker1/)")
 
-st.markdown("""
-### 📓 Prerequisites
+# Past Instructors
+st.markdown("##### Past Instructors")
+col1, col2 = st.columns(2)
+with col1:
+    st.markdown("[Sejal Vaidya](https://www.linkedin.com/in/vaidyasejal/)")
+with col2:
+    st.markdown("[Irem Erturk](https://www.linkedin.com/in/iremerturk/)")
 
-To get the most out of this course, you should feel comfortable with coding and command line
-and know the basics of SQL. Prior experience with Python will be helpful, but you can pick
-Python relatively fast if you have experience with other programming languages.
-
-Prior experience with data engineering is not required.
-
-### 👨‍🏫 Instructors
-
-- [Ankush Khanna](https://linkedin.com/in/ankushkhanna2)
-- [Victoria Perez Mola](https://www.linkedin.com/in/victoriaperezmola/)
-- [Alexey Grigorev](https://linkedin.com/in/agrigorev)
-- [Matt Palmer](https://www.linkedin.com/in/matt-palmer/)
-- [Luis Oliveira](https://www.linkedin.com/in/lgsoliveira/)
-- [Michael Shoemaker](https://www.linkedin.com/in/michaelshoemaker1/)
-
-Past instructors:
-
-- [Sejal Vaidya](https://www.linkedin.com/in/vaidyasejal/)
-- [Irem Erturk](https://www.linkedin.com/in/iremerturk/)
-
-### ❔ Asking for help in Slack
+st.markdown("""### ❔ Asking for help in Slack
 
 The best way to get support is to use [DataTalks.Club's Slack](https://datatalks.club/slack.html). Join the [`#course-data-engineering`](https://app.slack.com/client/T01ATQK62F8/C01FABYF2RG) channel.
 
